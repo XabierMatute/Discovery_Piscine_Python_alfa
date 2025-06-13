@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 def array_of_names(d):
-    a = []
-    for name in d:
-        a.append(name.capitalize() + ' ' + d[name].capitalize())
-    return a
+    return [(name.capitalize() + ' ' + d[name].capitalize()) for name in d]
+    # a = []
+    # for name in d:
+    #     a.append(name.capitalize() + ' ' + d[name].capitalize())
+    # return a
 
 persons = {
 "jean": "valjean",
